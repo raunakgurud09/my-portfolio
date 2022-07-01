@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import './variable';
+
+/*Typography*/
+:root {
+    font-family: $fontFamily;
+    --black10:hsl(0,0,10%);
+}

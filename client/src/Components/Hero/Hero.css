@@ -1,0 +1,31 @@
+.container{
+    width: 1544px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: 1px solid black;
+
+}
+
+.hero_text-wrap{
+    text-align: left;
+    color:var(--black10);
+}
+
+.hero_text-wrap h1{
+    
+}
+
+.container-left{
+    
+}
+
+.hero-image-container{
+
+}
+
+.hero-image{
+    max-width:660px ;
+    max-height: 530px;
+    object-fit: cover;
+}
