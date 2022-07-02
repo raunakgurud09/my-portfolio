@@ -24,6 +24,7 @@
   font-family: 'Roboto', sans-serif;
 
   /*Colors*/
+  --lightTint:rgba(223,246,253,.7);
   --tint: #dff6fd;
   --hue: #47b5ff;
   --tone: #1363df;

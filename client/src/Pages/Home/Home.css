@@ -10,6 +10,7 @@
 
 
 .container{
+    width: 100%;
     max-width: 1288px;
     display: flex;
     justify-content: space-between;
@@ -18,8 +19,8 @@
     /* outline: 1px solid black; */
     /* background-color: var(--black25); */
 
-    margin: 64px 48px ;
-
+    margin: 96px 48px ;
+    padding: 0px 2rem;
     position: relative;
 
     /* box-shadow: 5px 5px 10px black; */
