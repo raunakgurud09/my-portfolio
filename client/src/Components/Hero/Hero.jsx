@@ -4,7 +4,6 @@ import image from "../../Assets/Image/2842680.jpg";
 import "./Hero.css";
 
 function Hero() {
-  console.log(window.innerWidth);
   return (
     <div className="container">
       <div className="hero__container-left">

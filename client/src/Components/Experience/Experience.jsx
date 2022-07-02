@@ -4,27 +4,39 @@ import './Experience.css'
 import { Education } from '../../Data/Static/Education'
 import { Experiences } from '../../Data/Static/Experience'
 
-function Experience() {
-    const [active,setActive] = useState(false)
+// import ExperienceCard from './ExperienceCard'
 
-    const handleChange = () =>{
-        setActive(!active)
-        console.log(active)
+function Experience() {
+    const [activated,setActivated] = useState(true)
+    const [show,setShow] = useState([])
+
+    const handleChange1 = () =>{
+        setActivated(true)
+    }
+
+    const handleChange2 = ()=>{
+        setActivated(false)
     }
 
     useEffect(()=>{
-        console.log('...')
-        // {console.log(Education[0].Grade)}
-        {console.log(Experiences)}
-    },[active])
+        if(activated){
+           setShow(Experiences) 
+           console.log(Experiences)
+        }else{
+            setShow(Education)
+            console.log(Education)
+        }
+    },[activated])
 
   return (
     <div className='experience container'>
         <div className='experience__toggle-btn'>
-            <button className={active=== false ? "active" : "none"} onClick={handleChange}>Experience</button>
-            <button className={active=== true ? "active" : "none"} onClick={handleChange}>Education</button>
+            <button className={activated === true ? "activated" : "none"} onClick={handleChange1}>Experience</button>
+            <button className={activated === false ? "activated" : "none"} onClick={handleChange2}>Education</button>
         </div>
         <div className='experience__card'>
+            {/* <ExperienceCard /> */}
+            {console.log(show)}
         </div>
     </div>
   )

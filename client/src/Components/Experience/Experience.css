@@ -1,31 +1,36 @@
 .experience{
-    width: 100vw;   
-    height: 100vh;
+    width: 100%;   
+    /* height: max-content; */
+    height: 60vh;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* align-items: center;
-    align-content: center; */
+    
+
+    /* background-color: aqua; */
 }
 
 .experience__toggle-btn{
     display: flex;
     padding:.3rem;
-    background-color: var(--black10);
     border-radius: 32px;
+    background-color: transparent;
+    background-color: var(--black10);
+
+
 }
 
 .experience__toggle-btn button{
     border: none;
-    background-color: transparent;
     padding: 1rem;
     border-radius: 32px;
 }
-.experience__toggle-btn button:focus{
+
+.activated {
     background-color: black;
     color: white;
-    box-shadow: 2px 2px 5px black;
+    transition: .2s ease-in;
 }
 
 

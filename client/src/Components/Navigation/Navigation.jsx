@@ -15,7 +15,7 @@ function Navigation() {
           <span className="bar"></span>
           <span className="bar"></span>
         </NavLink>
-        <div class="menu">
+        <div className="menu">
           <ul>
             <li>
               <NavLink className="NavLink" to="/about">

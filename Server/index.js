@@ -1,9 +1,18 @@
 const express = require('express')
 const app = express();
+const cors = require('cors');
 
-app.get('/',(req,res)=>{
-    res.send('<h1>HELLO From server</h1>')
+app.use(cors({origin:"*"}))
+app.use(express.json())
+
+app.post('/send',(req,res)=>{
+    const response = req.body;
+    console.log(response);
+
+    res.status(200).json(response);
 })
+
+
 
 const PORT = 3001;
 
