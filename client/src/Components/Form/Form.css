@@ -47,6 +47,8 @@ input{
     border: 1px solid var(--black25);
     border-radius: 8px;
     padding: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family:   Verdana, 'Trebuchet MS', Tahoma,; */
 }
 
 textarea{

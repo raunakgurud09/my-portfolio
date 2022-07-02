@@ -44,6 +44,9 @@
     .footer__container-up{
       flex-direction: column;
     }
+    .footer__container-up{
+        padding:1rem;
+    }
     
 }
 
@@ -58,11 +61,15 @@
 }
 
 
+
 @media (max-width:800px) {
     .footer__container-down{
       flex-direction: column;
     }
     
+    .footer__container-down{
+        padding:1rem 1rem 0rem 1rem;
+    }
 }
 
 

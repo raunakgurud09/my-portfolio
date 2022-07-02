@@ -25,7 +25,7 @@ nav {
   width: inherit;
   height: 50px;
   /* background-color: var(--tint); */
-  background-color: var(--black10);
+  background-color: var(--tint);
 
   display: flex;
   justify-content: space-between;

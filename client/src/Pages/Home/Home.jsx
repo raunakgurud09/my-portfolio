@@ -1,7 +1,6 @@
-import React from "react";
+
 import { BrowserRouter as Router } from "react-router-dom";
-import { About, Hero, Navigation,Skills ,Contact} from "../../Components/exports";
-import {Footer} from '../../Components/exports'
+import { About, Hero, Navigation,Skills,Footer ,Contact,Experience} from "../../Components/exports";
 import "./Home.css";
 
 function Home() {
@@ -12,6 +11,7 @@ function Home() {
         <Hero />
         <About />
         <Skills />
+        <Experience />
         <Contact />
         <Footer />
       </Router>
