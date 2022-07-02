@@ -5,5 +5,29 @@
     flex-direction: column;
     align-items: center;
 
-    background-color: var(--black10);
+    /* background-color: var(--black10); */
+}
+
+
+.container{
+    max-width: 1288px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* outline: 1px solid black; */
+    /* background-color: var(--black25); */
+
+    margin: 64px 48px ;
+
+    position: relative;
+
+    /* box-shadow: 5px 5px 10px black; */
+}
+
+@media (max-width:700px) {
+    .container{
+        flex-direction: column;
+        margin: 64px 16px;
+    }
 }

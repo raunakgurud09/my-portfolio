@@ -1,0 +1,65 @@
+.NavLink {
+  color: #000;
+  text-decoration: none;
+  /* background-color: teal; */
+}
+ul {
+  list-style: none;
+}
+li {
+  display: inline;
+  margin-left: 16px;
+  font-weight: 500;
+}
+.navigation {
+  width: 100%;
+  max-width: 1544px;
+}
+
+.logo {
+  width: 16px;
+  height: 16px;
+}
+
+nav {
+  width: inherit;
+  height: 50px;
+  /* background-color: var(--tint); */
+  background-color: var(--black10);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem 3rem;
+}
+
+@media (max-width: 1000px) {
+  .menu {
+    display: none;
+  }
+  nav {
+    padding: 2rem 1rem;
+  }
+  
+}
+
+/**********************************************/
+
+
+@media (max-width:1000px) {
+  .toggle-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    height: 20px;
+    /* background-color: teal; */
+  }
+  .toggle-button .bar {
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+  }
+}
