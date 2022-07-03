@@ -1,6 +1,6 @@
 
 import { BrowserRouter as Router } from "react-router-dom";
-import { About, Hero, Navigation,Skills,Footer ,Contact,Experience} from "../../Components/exports";
+import { About, Hero, Navigation,Skills,Footer ,Contact} from "../../Components/exports";
 import "./Home.css";
 
 function Home() {
@@ -11,7 +11,7 @@ function Home() {
         <Hero />
         <About />
         <Skills />
-        <Experience />
+        {/* <Experience /> */}
         <Contact />
         <Footer />
       </Router>

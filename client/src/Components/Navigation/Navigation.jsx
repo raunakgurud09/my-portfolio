@@ -7,12 +7,15 @@ import { HashLink as Link } from "react-router-hash-link";
 function Navigation() {
   const [extendedNavbar, setExtendedNavbar] = useState(false);
 
+
   return (
     <div className="navigation">
       <nav>
         <NavLink className="NavLink" to="/">
           <h1>RAUNAK GURUD</h1>
         </NavLink>
+        <div className="navigation__toggle-menu">
+
         <NavLink
           className="NavLink toggle-button"
           to="/"
@@ -33,7 +36,7 @@ function Navigation() {
             </>
           )}
         </NavLink>
-        <div className="menu">
+        <div className="menu active">
           <ul>
             <li>
               <Link className="NavLink" to="#about">
@@ -56,6 +59,7 @@ function Navigation() {
               </Link>
             </li>
           </ul>
+        </div>
         </div>
       </nav>
     </div>

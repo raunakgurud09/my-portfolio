@@ -19,9 +19,10 @@ function Skills() {
     <div className="skills" id="skills">
       <h2>SKILLS</h2>
       <div className="skills__container">
-        {skills?.map((skill) => {
+        {skills?.map((skill,index) => {
           return (
             <SkillContainer 
+              key={index}
               image={skill.imgURI} 
               name={skill.skillName} 
             />
