@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  scroll-behavior: smooth
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto&display=swap');
@@ -54,11 +56,11 @@
 }
 @media (max-width:700px) {
     :root{
-      --heading1: 40px;
-      --heading2: 32px;
-      --heading3: 28px;
-      --heading4: 24px;
-      --heading5: 20px;
+      --heading1: 28px;
+      --heading2: 22px;
+      --heading3: 22px;
+      --heading4: 20px;
+      --heading5: 18px;
       --heading6: 16px;
       --para:24px;
       font-family: 'Poppins', sans-serif;

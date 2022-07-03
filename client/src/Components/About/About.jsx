@@ -3,7 +3,7 @@ import image from '../../Assets/Image/mypic1.png'
 
 function About() {
   return (
-    <div className="container">
+    <div className="container" id="about">
       <div className="about__container-left">
         <div className="about__text-wrap">
           <h3>About ME</h3>

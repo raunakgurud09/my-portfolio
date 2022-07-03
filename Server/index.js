@@ -5,11 +5,23 @@ const cors = require('cors');
 app.use(cors({origin:"*"}))
 app.use(express.json())
 
-app.post('/send',(req,res)=>{
-    const response = req.body;
-    console.log(response);
 
-    res.status(200).json(response);
+// let users = [
+//     {
+//         name:"",
+//         email:"",
+//         message:"",
+//     }
+// ]
+
+app.post('/send',(req,res)=>{
+    const {name,email,message} = req.body;
+    // console.log(name,email,message);
+    // users = users.push({name:name,email:email,message:message})
+   
+    // console.log(users);
+
+    res.status(200).json({name,email,message});
 })
 
 

@@ -1,12 +1,33 @@
 import React from "react";
 import "./Skills.css";
+import { skills } from "../../Data/Static/Skills";
+
+// console.log(skills)
+const SkillContainer = (props) => {
+  // console.log(props);
+  return (
+    <div className="skill__container">
+      <img src={props.image} height="60px" width="60px" alt="skillsURl" />
+      <h3>{props.name}</h3>
+    </div>
+  );
+};
 
 function Skills() {
+  // console.log('hi')
   return (
-    <div className="skills">
+    <div className="skills" id="skills">
       <h2>SKILLS</h2>
-      <div className="skills__contanier">
-       
+      <div className="skills__container">
+        {skills?.map((skill) => {
+          return (
+            <SkillContainer 
+              image={skill.imgURI} 
+              name={skill.skillName} 
+            />
+          );
+        })}
+        
       </div>
     </div>
   );

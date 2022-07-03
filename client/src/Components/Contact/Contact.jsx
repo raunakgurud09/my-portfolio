@@ -4,7 +4,7 @@ import Form from "../Form/Form";
 
 function Contact() {
   return (
-    <div className="container">
+    <div className="container" id="contact">
       <div className="contact__container-left">
         <div className="contact__text-wrap">
           <h3>Send me a message!</h3>
