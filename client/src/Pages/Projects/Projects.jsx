@@ -2,7 +2,6 @@ import { Footer, Navigation } from "../../Components/exports";
 import "./Projects.css";
 import { Projects as projectsData } from "../../Data/Static/Projects";
 
-console.log(projectsData);
 
 const ProjectCard = (props) => {
   return (
