@@ -20,6 +20,7 @@
     box-shadow: 20px 20px teal,-20px -20px maroon;
     color:transparent;
     color:yellow;
+    color:transparent;
 }
 .Project__container:hover::before{
     background-color: rgba(0,0,0,0.1);
@@ -62,6 +63,8 @@
     left: 1rem;
     z-index: 3;
     color:white;
+
+
 }
 
 

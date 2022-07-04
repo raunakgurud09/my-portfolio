@@ -5,7 +5,12 @@
     flex-direction: column;
 
     align-items: flex-start;
+    background-color: var(--black10);
 
+}
+
+.projectHome h2{
+    margin: 1rem;
 }
 
 .projectHome__container{
@@ -15,7 +20,6 @@
     
     padding: 2rem;
     
-    background-color: var(--black10);
     
     display: flex;
     justify-content: center;

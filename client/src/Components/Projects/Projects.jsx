@@ -1,6 +1,24 @@
 import "./Projects.css";
 import Project from "./Project";
 import { Projects as projectData } from "../../Data/Static/Projects";
+import styled from 'styled-components'
+
+const StyledButton = styled.button`
+  
+  width: 150px;
+  height: 50px;
+
+  /* background-color: var(--tone); */
+  background-color: transparent;
+
+  border: 2px solid var(--shade);
+  border-radius: 32px;
+
+  font-weight: 700;
+
+  margin: 1rem;
+  
+`
 
 function Projects() {
   return (
@@ -22,7 +40,8 @@ function Projects() {
           }
         })}
       </div>
-      <button>See all</button>
+      {/* <button>See all</button> */}
+      <StyledButton>SEE ALL</StyledButton>
     </div>
   );
 }
