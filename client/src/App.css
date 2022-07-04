@@ -56,13 +56,13 @@
 }
 @media (max-width:700px) {
     :root{
-      --heading1: 28px;
+      --heading1: 24px;
       --heading2: 22px;
-      --heading3: 22px;
-      --heading4: 20px;
-      --heading5: 18px;
-      --heading6: 16px;
-      --para:24px;
+      --heading3: 19px;
+      --heading4: 17px;
+      --heading5: 15px;
+      --heading6: 14px;
+      --para: 12px;
       font-family: 'Poppins', sans-serif;
     
     }

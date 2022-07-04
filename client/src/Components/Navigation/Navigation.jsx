@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Navigation.css";
 import { NavLink } from "react-router-dom";
-import { HashLink as Link } from "react-router-hash-link";
+import { HashLink  } from "react-router-hash-link";
 // import image from "../../Assets/Image/logo.png";
 
 function Navigation() {
@@ -9,7 +9,6 @@ function Navigation() {
   const [active, setActive] = useState(false);
 
 
-  console.log(active)
 
   return (
     <div className="navigation">
@@ -52,24 +51,24 @@ function Navigation() {
           <div id="myDIV" className="menu">
             <ul className="nav-links">
               <li>
-                <Link className="NavLink" to="#about">
+                <HashLink className="NavLink" to="#about">
                   ABOUT
-                </Link>
+                </HashLink>
               </li>
               <li>
-                <Link className="NavLink" to="#experience">
+                <HashLink className="NavLink" to="#experience">
                   EXPERIENCE
-                </Link>
+                </HashLink>
               </li>
               <li>
-                <Link className="NavLink" to="#projects">
+                <HashLink className="NavLink" to="#projects">
                   PROJECTS
-                </Link>
+                </HashLink>
               </li>
               <li>
-                <Link className="NavLink" to="#contact">
+                <HashLink className="NavLink" to="#contact">
                   CONTACT
-                </Link>
+                </HashLink>
               </li>
             </ul>
           </div>
