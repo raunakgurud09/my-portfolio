@@ -28,7 +28,7 @@ function Navigation() {
                   element.classList.remove("active")
                 } else {
                   setActive(false);
-                  var element = document.getElementById("myDIV");
+                  element = document.getElementById("myDIV");
                   element.classList.add("active");
                 }
                 return !curr;

@@ -61,13 +61,15 @@ nav {
   .nav-links {
     position: absolute;
     right: 0;
-    height: 92vh;
+    height: 50%;
     top: 8vh;
     background-color: var(--tint);
     
     align-items: flex-end;
 
-    width: 50vw;
+    width: 50%;
+
+    border-radius: 0 0  0 100%;
     z-index: 5;
   }
   
