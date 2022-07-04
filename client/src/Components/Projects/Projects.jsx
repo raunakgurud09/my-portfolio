@@ -4,7 +4,7 @@ import { Projects as projectData } from "../../Data/Static/Projects";
 
 function Projects() {
   return (
-    <div className="projectHome container">
+    <div className="projectHome container" id="projects">
       <h2>Projects</h2>
       <div className="projectHome__container">
         {projectData?.map((project, index) => {
