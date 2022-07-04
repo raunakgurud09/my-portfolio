@@ -1,10 +1,11 @@
 .projectHome{
     width: 100%;
-    height: 500px;
+    height: max-content;
     display: flex;
     flex-direction: column;
 
     align-items: flex-start;
+    /* justify-content: center; */
 }
 
 .projectHome__container{
@@ -26,8 +27,4 @@
         flex-direction: column;
         align-items: center;
     }
-}
-
-.projectHome__card{
-
 }
