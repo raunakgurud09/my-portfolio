@@ -6,6 +6,10 @@ import { HashLink as Link } from "react-router-hash-link";
 
 function Navigation() {
   const [extendedNavbar, setExtendedNavbar] = useState(false);
+  const [active, setActive] = useState(false);
+
+
+  console.log(active)
 
   return (
     <div className="navigation">
@@ -18,7 +22,18 @@ function Navigation() {
             className="NavLink toggle-button"
             to="/"
             onClick={() => {
-              setExtendedNavbar((curr) => !curr);
+              setExtendedNavbar((curr) => {
+                if (curr) {
+                  setActive(true);
+                  var element = document.getElementById("myDIV");
+                  element.classList.remove("active")
+                } else {
+                  setActive(false);
+                  var element = document.getElementById("myDIV");
+                  element.classList.add("active");
+                }
+                return !curr;
+              });
             }}
           >
             {extendedNavbar ? (
@@ -34,8 +49,8 @@ function Navigation() {
               </>
             )}
           </NavLink>
-          <div className="menu active">
-            <ul>
+          <div id="myDIV" className="menu">
+            <ul className="nav-links">
               <li>
                 <Link className="NavLink" to="#about">
                   ABOUT
