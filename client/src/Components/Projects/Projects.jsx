@@ -1,10 +1,10 @@
 import "./Projects.css";
 import Project from "./Project";
 import { Projects as projectData } from "../../Data/Static/Projects";
-import styled from 'styled-components'
+import {Link} from 'react-router-dom'
+import styled from "styled-components";
 
 const StyledButton = styled.button`
-  
   width: 150px;
   height: 50px;
 
@@ -17,8 +17,7 @@ const StyledButton = styled.button`
   font-weight: 700;
 
   margin: 1rem;
-  
-`
+`;
 
 function Projects() {
   return (
@@ -35,16 +34,17 @@ function Projects() {
                 description={project.ProjectSummary}
               />
             );
-          }else{
+          } else {
             return;
           }
         })}
       </div>
       {/* <button>See all</button> */}
-      <StyledButton>SEE ALL</StyledButton>
+      <Link to="/projects">
+        <StyledButton>SEE ALL</StyledButton>
+      </Link>
     </div>
   );
 }
-
 
 export default Projects;

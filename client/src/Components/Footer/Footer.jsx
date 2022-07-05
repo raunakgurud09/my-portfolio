@@ -1,4 +1,5 @@
 import "./Footer.css";
+import {Link,Redirect} from 'react-router-dom'
 
 function Footer() {
   return (
@@ -7,11 +8,13 @@ function Footer() {
         <div className="up-left">
           <h3>Say Hello!</h3>
           <p>raunakgurud2121@gmail.com</p>
+          {/* <p>My Blog</p> */}
         </div>
         <div className="up-right">
-          <p>My work</p>
-          <p>My resume</p>
-          {/* <p>My Blog</p> */}
+          {/* <Redirect style={{color:"var(--lightTint)" ,textDecoration:"none"}} from="/" to="/projects"><p>My work</p></Redirect> */}
+          {/* <Link style={{color:"var(--lightTint)" ,textDecoration:"none"}} target="_blank" to="https://www.google.com"><p>My resume</p></Link> */}
+          <a style={{color:"var(--lightTint)" ,textDecoration:"none"}} target="_blanck" href="/projects"><p>My work</p></a>
+          <a style={{color:"var(--lightTint)" ,textDecoration:"none"}} target="_blanck" href="https:google.com"><p>My resume</p></a>
         </div>
       </div>
       <div className="footer__container-line"></div>

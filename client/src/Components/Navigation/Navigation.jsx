@@ -51,22 +51,22 @@ function Navigation() {
           <div id="myDIV" className="menu">
             <ul className="nav-links">
               <li>
-                <HashLink className="NavLink" to="#about">
+                <HashLink className="NavLink" to="/#about">
                   ABOUT
                 </HashLink>
               </li>
               <li>
-                <HashLink className="NavLink" to="#experience">
-                  EXPERIENCE
+                <HashLink className="NavLink" to="/#skills">
+                  SKILLS
                 </HashLink>
               </li>
               <li>
-                <HashLink className="NavLink" to="#projects">
+                <HashLink className="NavLink" to="/#projects">
                   PROJECTS
                 </HashLink>
               </li>
               <li>
-                <HashLink className="NavLink" to="#contact">
+                <HashLink className="NavLink" to="/#contact">
                   CONTACT
                 </HashLink>
               </li>

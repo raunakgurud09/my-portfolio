@@ -16,10 +16,6 @@ app.use(express.json())
 
 app.post('/send',(req,res)=>{
     const {name,email,message} = req.body;
-    // console.log(name,email,message);
-    // users = users.push({name:name,email:email,message:message})
-   
-    // console.log(users);
 
     res.status(200).json({name,email,message});
 })

@@ -7,6 +7,7 @@
     width: 100%;
     height: max-content;
 }
+skills:target {margin-top: 50px}
 
 .skills h2{
     margin: 1rem;
