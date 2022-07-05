@@ -1,5 +1,5 @@
 import { Button } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import {  useState } from "react";
 import "./Form.css";
 import axios from "axios";
 // import {Button} from '@mui/material'
@@ -20,7 +20,6 @@ function Form() {
       return;
     } else {
       setErrorMessage(false);
-
     }
 
     //backend would listen to this and send to mailing list and twillio
@@ -40,12 +39,6 @@ function Form() {
       setSuccessful(false);
     }
   };
-
-  useEffect(() => {
-    return () => {
-      console.log("unmounted");
-    };
-  }, [handleSubmit]);
 
   return (
     <form className="form" onSubmit={handleSubmit}>
@@ -91,7 +84,7 @@ function Form() {
       <Button variant="outlined" onClick={handleSubmit}>
         Send message
       </Button>
-      {successful ? <span>Message send</span> : ""}
+      {successful ? <span>Message send</span> : null}
     </form>
   );
 }

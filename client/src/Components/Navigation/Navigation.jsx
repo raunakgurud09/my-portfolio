@@ -19,13 +19,15 @@ function Navigation() {
         <div className="navigation__toggle-menu">
           <NavLink
             className="NavLink toggle-button"
+            exact
             to="/"
             onClick={() => {
               setExtendedNavbar((curr) => {
                 if (curr) {
                   setActive(true);
                   var element = document.getElementById("myDIV");
-                  element.classList.remove("active")
+                  element.classList.remove("active");
+                  console.log(active)
                 } else {
                   setActive(false);
                   element = document.getElementById("myDIV");

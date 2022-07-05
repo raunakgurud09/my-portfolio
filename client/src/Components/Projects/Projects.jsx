@@ -35,7 +35,7 @@ function Projects() {
               />
             );
           } else {
-            return;
+            return null;
           }
         })}
       </div>

@@ -1,5 +1,4 @@
 import "./Footer.css";
-import {Link,Redirect} from 'react-router-dom'
 
 function Footer() {
   return (
