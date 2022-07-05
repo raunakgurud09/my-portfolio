@@ -1,4 +1,4 @@
-import { About, Hero, Navigation,Skills,Footer ,Contact,Projects} from "../../Components/exports";
+import { About, Hero, Navigation,Skills,Footer ,Contact,Experience,Projects} from "../../Components/exports";
 import "./Home.css";
 
 function Home() {
