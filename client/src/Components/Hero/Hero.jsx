@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@mui/material";
-import image from "../../Assets/Image/2842680.jpg";
+import image from "../../Assets/Image/HeroImage.jpg";
 import "./Hero.css";
 import { HashLink  } from "react-router-hash-link";
 
