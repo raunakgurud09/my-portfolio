@@ -78,3 +78,13 @@ input:focus{
 form Button{
     margin: 2rem 0px;
 }
+
+.error{
+    color :red;
+    font-size: smaller;
+}
+
+form span{
+    color :green;
+    margin: .4rem;
+}

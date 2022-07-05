@@ -8,9 +8,20 @@ function Form() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState(false);
+  const [successful, setSuccessful] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    console.log(name)
+    if (!name || !email) {
+      setErrorMessage(true);
+      return;
+    } else {
+      setErrorMessage(false);
+
+    }
 
     //backend would listen to this and send to mailing list and twillio
     try {
@@ -20,8 +31,13 @@ function Form() {
         email: email,
       });
       console.log(res.data);
+      setName("");
+      setEmail("");
+      setMessage("");
+      setSuccessful(true);
     } catch (err) {
       console.log(err);
+      setSuccessful(false);
     }
   };
 
@@ -41,7 +57,9 @@ function Form() {
             name="name"
             placeholder="Enter your name"
             onChange={(e) => setName(e.target.value)}
+            value={name}
           />
+          {errorMessage ? <span className="error">Name is required*</span> : ""}
         </label>
         <label>
           Your Email
@@ -50,7 +68,13 @@ function Form() {
             name="email"
             placeholder="Enter your email"
             onChange={(e) => setEmail(e.target.value)}
+            value={email}
           />
+          {errorMessage ? (
+            <span className="error">Email is required*</span>
+          ) : (
+            ""
+          )}
         </label>
       </div>
       <label>
@@ -61,11 +85,13 @@ function Form() {
           name="message"
           placeholder="Hi I think we need a web designer and developer hope you can help."
           onChange={(e) => setMessage(e.target.value)}
+          value={message}
         ></textarea>
       </label>
       <Button variant="outlined" onClick={handleSubmit}>
         Send message
       </Button>
+      {successful ? <span>Message send</span> : ""}
     </form>
   );
 }
