@@ -1,4 +1,5 @@
 import "./Footer.css";
+import download from './Resume.pdf'
 
 function Footer() {
   return (
@@ -13,7 +14,8 @@ function Footer() {
           {/* <Redirect style={{color:"var(--lightTint)" ,textDecoration:"none"}} from="/" to="/projects"><p>My work</p></Redirect> */}
           {/* <Link style={{color:"var(--lightTint)" ,textDecoration:"none"}} target="_blank" to="https://www.google.com"><p>My resume</p></Link> */}
           <a style={{color:"var(--lightTint)" ,textDecoration:"none"}} target="_blanck" href="/projects"><p>My work</p></a>
-          <a style={{color:"var(--lightTint)" ,textDecoration:"none"}} target="_blanck" href="https:google.com"><p>My resume</p></a>
+          <a style={{color:"var(--lightTint)" ,textDecoration:"none"}}  target="_blanck" href={download} download="Resume.pdf"><p>My resume</p></a>
+          
         </div>
       </div>
       <div className="footer__container-line"></div>

@@ -19,7 +19,6 @@ function Navigation() {
         <div className="navigation__toggle-menu">
           <NavLink
             className="NavLink toggle-button"
-            exact
             to="/"
             onClick={() => {
               setExtendedNavbar((curr) => {
