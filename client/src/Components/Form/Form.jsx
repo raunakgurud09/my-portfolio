@@ -13,8 +13,6 @@ function Form() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    console.log(name)
     if (!name || !email) {
       setErrorMessage(true);
       return;
@@ -36,6 +34,7 @@ function Form() {
       setSuccessful(true);
     } catch (err) {
       console.log(err);
+      console.log(`try with different email or try again later`)
       setSuccessful(false);
     }
   };
