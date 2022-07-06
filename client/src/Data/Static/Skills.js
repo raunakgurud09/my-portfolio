@@ -10,29 +10,36 @@ export const skills = [
     {
         imgURI : reactImg,
         skillName : "React",
+        alt:"React Developer"
     },
     {
         imgURI : jsImg,
         skillName : "JavaScript",
+        alt:"JavaScript Developer"
     },
     {
         imgURI : nodeJSImg,
         skillName : "NodeJS",
+        alt:"NodeJS Developer"
     },
     {
         imgURI : mongoDBImg,
         skillName : "MongoDB",
+        alt:"MongoDB Developer"
     },
     {
         imgURI : cppImg,
         skillName : "C++",
+        alt:"CPP Developer"
     },
     {
         imgURI : htmlImg,
         skillName : "HTML",
+        alt:"HTML Developer"
     },
     {
         imgURI : tsImg,
         skillName : "TypeScript",
+        alt:"TypeScript Developer"
     },
 ]

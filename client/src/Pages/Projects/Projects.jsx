@@ -11,11 +11,11 @@ const ProjectCard = (props) => {
         style={{ backgroundColor: props.backgroundColor }}
       ></div>
       <div className="project__image-container">
-        <img src={props.image} alt="project-c ard" />
+        <img src={props.image} alt={props.alt} />
       </div>
       <div className="project__text-container">
         <h2>{props.title}</h2>
-        <p>{props.summary}</p>
+        <p>{props.description}</p>
       </div>
     </div>
   );
@@ -36,6 +36,7 @@ function Projects() {
               title={project.ProjectTitle}
               summary={project.ProjectSummary}
               backgroundColor={project.backgroundColor}
+              description={project.ProjectDescription}
             />
           );
         })}

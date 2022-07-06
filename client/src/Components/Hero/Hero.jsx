@@ -21,7 +21,7 @@ function Hero() {
         </HashLink>
       </div>
       <div className="hero__container-right">
-        <img src={image} alt="hero" />
+        <img src={image} alt="Full stack web developer" />
       </div>
     </div>
   );

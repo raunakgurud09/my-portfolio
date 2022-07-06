@@ -7,7 +7,7 @@ const SkillContainer = (props) => {
   // console.log(props);
   return (
     <div className="skill__container">
-      <img src={props.image} height="60px" width="60px" alt="skillsURl" />
+      <img src={props.image} height="60px" width="60px" alt={props.alt} />
       <h3>{props.name}</h3>
     </div>
   );

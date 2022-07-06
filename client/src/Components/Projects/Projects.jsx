@@ -31,7 +31,7 @@ function Projects() {
                 key={index}
                 image={project.imageURI}
                 title={project.ProjectTitle}
-                description={project.ProjectSummary}
+                summary={project.ProjectSummary}
               />
             );
           } else {
