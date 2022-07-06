@@ -24,7 +24,7 @@ function Form() {
 
     //backend would listen to this and send to mailing list and twillio
     try {
-      const res = await axios.post("http://localhost:3001/send", {
+      const res = await axios.post("https://myportfoliobackend2002.herokuapp.com/send", {
         name: name,
         message: message,
         email: email,
